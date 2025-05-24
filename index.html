@@ -7,13 +7,16 @@
         /* Banner Styling */
         .banner {
             width: 100%;
-            height: 300px; /* Adjust to fit your design */
+            height: 200px; /* Adjust to fit your design */
             overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #fce0e6;
             position: relative; /* Keeps it at the top */
+            opacity: 0; /* Initially invisible */
+            transform: translateY(-30px); /* Starts slightly off-screen */
+            transition: opacity 1.5s ease-out, transform 1.5s ease-out;
             top: 0;
             left: 0;
             z-index: 100;
