@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>Favour Ubadike | DSr</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -11,15 +15,18 @@
       color: #333;
     }
 
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
     .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       background-color: #000;
-      padding: 15px 20px;
+      padding: 15px 0;
       position: fixed;
-      width: 100%;
       top: 0;
+      width: 100%;
       z-index: 1000;
     }
 
@@ -27,11 +34,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
       flex-wrap: wrap;
-      gap: 10px;
     }
-
 
     .logo {
       color: white;
@@ -45,10 +49,9 @@
       flex-wrap: wrap;
       gap: 16px;
       justify-content: flex-end;
-      flex: 1 1 auto; /* allow it to grow and shrink */
-      min-width: 0;
+      max-width: 100%;
     }
-    
+
     .nav a {
       color: #c65bbf;
       text-decoration: none;
@@ -57,8 +60,7 @@
       position: relative;
       padding: 6px 10px;
     }
-    
-    /* Hover underline */
+
     .nav a::after {
       content: '';
       position: absolute;
@@ -69,23 +71,22 @@
       background-color: #c65bbf;
       transition: width 0.3s ease;
     }
-    
+
     .nav a:hover::after {
       width: 100%;
     }
-    
-    /* Media query fix for small screens */
+
     @media (max-width: 768px) {
       .header-inner {
         flex-direction: column;
         align-items: flex-start;
       }
-      
+
       .nav {
         justify-content: flex-start;
         width: 100%;
       }
-    
+
       .nav a {
         font-size: 14px;
         padding: 5px 8px;
@@ -95,26 +96,36 @@
     .hero {
       display: flex;
       align-items: center;
-      padding: 100px 40px 60px;
       gap: 40px;
-      background-color: #000000;
+      background-color: #000;
+      margin-top: 80px;
+    }
+
+    .hero .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+      gap: 40px;
+      align-items: center;
     }
 
     .profile {
       flex: 1;
+      min-width: 260px;
     }
 
     .profile img {
-      width: 500px;
-      height: 500px;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
       object-fit: cover;
       border-radius: 50%;
-      border: none;
-      box-shadow: none;
     }
 
     .intro {
       flex: 2;
+      min-width: 300px;
+      color: white;
     }
 
     .intro h2 {
@@ -124,7 +135,7 @@
 
     .intro h1 {
       font-size: 36px;
-      color: #a02c4f;
+      color: #ec5d8f;
       margin: 0;
     }
 
@@ -154,60 +165,69 @@
     }
 
     .stats {
-      display: flex;
-      justify-content: space-around;
       background-color: #fff0f5;
       padding: 40px 20px;
       margin-top: 40px;
       font-weight: bold;
     }
 
-    .stats div {
+    .stats .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
       text-align: center;
+    }
+
+    .stats div {
       font-size: 18px;
+      flex: 1;
+      min-width: 150px;
     }
   </style>
 </head>
 <body>
   <!-- Header -->
   <div class="header">
-  <div class="header-inner">
-    <h1 class="logo">ChyTalksTech</h1>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Skills</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contact</a>
-    </nav>
+    <div class="container header-inner">
+      <h1 class="logo">ChyTalksTech</h1>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
   </div>
-</div>
-
-
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="profile">
-      <img src="face1.png" alt="Favour Ubadike">
-    </div>
-    <div class="intro">
-      <h2>Hello, I'm</h2>
-      <h1>Favour Ubadike</h1>
-      <p><strong>Data Scientist</strong></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor augue at nisi bibendum, in rhoncus massa efficitur.</p>
-      <div class="buttons">
-        <button>More about Me</button>
-        <button>Contact Me</button>
+    <div class="container">
+      <div class="profile">
+        <img src="face1.png" alt="Favour Ubadike">
+      </div>
+      <div class="intro">
+        <h2>Hello, I'm</h2>
+        <h1>Favour Ubadike</h1>
+        <p><strong>Data Scientist</strong></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor augue at nisi bibendum, in rhoncus massa efficitur.</p>
+        <div class="buttons">
+          <button>More about Me</button>
+          <button>Contact Me</button>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Stats Section -->
   <div class="stats">
-    <div>10+ Years of Experience</div>
-    <div>30+ Projects Completed</div>
-    <div>5+ Technologies Mastered</div>
-    <div>100+ Satisfied Clients</div>
+    <div class="container">
+      <div>10+ Years of Experience</div>
+      <div>30+ Projects Completed</div>
+      <div>5+ Technologies Mastered</div>
+      <div>100+ Satisfied Clients</div>
+    </div>
   </div>
 </body>
 </html>
