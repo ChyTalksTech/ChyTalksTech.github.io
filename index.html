@@ -96,10 +96,13 @@
     .hero {
       display: flex;
       align-items: center;
+      padding: 100px 40px 60px;
       gap: 40px;
-      background-color: #000;
-      margin-top: 80px;
+      background-color: #000000;
+      min-height: calc(100vh - 70px); /* Full screen minus header height */
+      margin-top: 70px; /* Push hero below fixed header */
     }
+
 
     .hero .container {
       display: flex;
