@@ -1,116 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Chy Talks Tech</title>
-    <style>
-        /* Ribbon Navigation */
-        .ribbon {
-            display: flex;
-            justify-content: flex-start; /* Aligns logo and links properly */
-            align-items: center;
-            width: 100%;
-            height: 60px; /* Adjust for cleaner look */
-            padding: 10px 40px; /* Adds balanced spacing */
-            background-color: #ec5d8f; /* Soft pink for branding */
-            border-bottom: 3px solid #a02c4f; /* Slightly thicker border */
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-        }
+  <meta charset="UTF-8">
+  <title>Chy Talks Tech | Frontend Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+    }
 
-        .logo img {
-            height: 50px; /* Adjust banner size */
-            width: auto;
-        }
+    .ribbon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ec5d8f;
+      padding: 15px 30px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
 
-        .nav-links {
-            display: flex;
-            gap: 20px; /* Ensures spacing between links */
-            margin-left: 150px; /* Shifts navigation slightly right */
-        }
+    .logo img {
+      height: 50px;
+    }
 
-        .nav-links a {
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px; /* Adjusts text size */
-            color: #ffffff; /* Makes links stand out */
-            padding: 8px 12px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease-in-out;
-        }
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
 
-        .nav-links a:hover {
-            background-color: #a02c4f; /* Hover effect */
-        }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease-in-out;
+    }
 
-        /* Hero Section Below Ribbon */
-        .hero {
-            margin-top: 80px; /* Pushes section below ribbon */
-            padding: 50px 20px;
-            text-align: center;
-            background-color: #f9e9ee; /* Soft contrast */
-        }
+    .nav-links a:hover {
+      background-color: #a02c4f;
+    }
 
-        .hero h1 {
-            font-size: 28px;
-            color: #333;
-        }
-        
-        .hero p {
-            font-size: 18px;
-            color: #555;
-        }
-        
-        .cta {
-            padding: 10px 20px;
-            background-color: #ec5d8f;
-            color: white;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
-        
-        .cta:hover {
-            background-color: #a02c4f;
-        }
+    .hero {
+      margin-top: 100px;
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #fde4eb;
+    }
 
-        /* Main Content Styling */
-        .main-content {
-            padding-top: 50px; /* Adjusts position for smoother layout */
-            text-align: center;
-        }
-    </style>
+    .hero h1 {
+      font-size: 36px;
+      color: #a02c4f;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #444;
+    }
+
+    .buttons {
+      margin-top: 25px;
+    }
+
+    .cta {
+      background-color: #ec5d8f;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 0 8px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: #a02c4f;
+    }
+
+    .main-content {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #ec5d8f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-    <!-- Ribbon Navigation -->
-    <div class="ribbon">
-        <div class="logo">
-            <img src="Chy Talks Tech_20250519_200023_0000.png" alt="Chy Talks Tech Banner">
-        </div>
-        <nav class="nav-links">
-            <a href="#">About Me</a>
-            <a href="#">Projects</a>
-            <a href="#">Volunteering</a>
-            <a href="#">Conferences</a>
-            <a href="#">Contact Me</a>
-        </nav>
+  <div class="ribbon">
+    <div class="logo">
+      <img src="Chy Talks Tech_20250519_200023_0000.png" alt="Chy Talks Tech Logo">
     </div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Skills</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
 
-    <!-- Hero Section Below Ribbon -->
-    <section class="hero">
-        <h1>Welcome to Chy Talks Tech 🚀</h1>
-        <p>Exploring, learning, and growing in tech—one insight at a time.</p>
-        <button class="cta">Get Started</button>
-    </section>
-
-    <!-- Main Content Section -->
-    <div class="main-content">
-        <h1>🚀 More About Chy Talks Tech</h1>
-        <p>Sharing insights, creativity, and knowledge in the tech space.</p>
+  <section class="hero">
+    <h1>Hello, I'm Chy 👩‍💻</h1>
+    <p>Frontend Developer | Tech Enthusiast | Curious Creative</p>
+    <div class="buttons">
+      <button class="cta">Download CV</button>
+      <button class="cta">Hire Me</button>
+      <button class="cta">Contact Me</button>
     </div>
+  </section>
+
+  <div class="main-content">
+    <h1>💡 What I Do</h1>
+    <p>I build visually delightful and functional web experiences using modern technologies.</p>
+    <h2>Skills</h2>
+    <p>HTML · CSS · JavaScript · React · Git · Figma</p>
+    <h2>Services</h2>
+    <p>Responsive Web Design · UI/UX Consulting · Personal Branding Sites</p>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Chy Talks Tech. All rights reserved.</p>
+  </div>
 </body>
 </html>
