@@ -2,135 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Chy Talks Tech | Frontend Developer</title>
+  <title>Chandni Chauhan | Frontend Developer</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fde4eb;
+      color: #333;
     }
 
-    .ribbon {
+    .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       background-color: #ec5d8f;
-      padding: 15px 30px;
+      padding: 20px 40px;
       position: fixed;
       width: 100%;
       top: 0;
-      left: 0;
       z-index: 1000;
     }
 
-    .logo img {
-      height: 50px;
+    .header h1 {
+      color: white;
+      font-size: 24px;
+      margin: 0;
     }
 
-    .nav-links {
+    .nav {
       display: flex;
-      gap: 25px;
+      gap: 20px;
     }
 
-    .nav-links a {
-      color: #fff;
+    .nav a {
+      color: white;
       text-decoration: none;
-      font-weight: 600;
-      padding: 8px 14px;
-      border-radius: 4px;
-      transition: background-color 0.2s ease-in-out;
+      font-weight: bold;
+      transition: border-bottom 0.3s ease;
     }
 
-    .nav-links a:hover {
-      background-color: #a02c4f;
+    .nav a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    .cv-btn {
+      background-color: white;
+      color: #ec5d8f;
+      border: none;
+      padding: 8px 16px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
     }
 
     .hero {
-      margin-top: 100px;
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #fde4eb;
+      display: flex;
+      align-items: center;
+      padding: 140px 40px 60px;
+      gap: 40px;
     }
 
-    .hero h1 {
+    .profile {
+      flex: 1;
+    }
+
+    .profile img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ec5d8f;
+      box-shadow: 0 0 10px rgba(236, 93, 143, 0.5);
+    }
+
+    .intro {
+      flex: 2;
+    }
+
+    .intro h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .intro h1 {
       font-size: 36px;
       color: #a02c4f;
+      margin: 0;
     }
 
-    .hero p {
+    .intro p {
       font-size: 18px;
-      color: #444;
+      margin-top: 15px;
     }
 
     .buttons {
-      margin-top: 25px;
+      margin-top: 20px;
     }
 
-    .cta {
-      background-color: #ec5d8f;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      margin: 0 8px;
-      font-size: 16px;
-      border-radius: 6px;
+    .buttons button {
+      background-color: transparent;
+      color: #ec5d8f;
+      border: 2px solid #ec5d8f;
+      padding: 10px 20px;
+      margin-right: 10px;
+      border-radius: 4px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      font-weight: bold;
     }
 
-    .cta:hover {
-      background-color: #a02c4f;
-    }
-
-    .main-content {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .footer {
+    .buttons button:hover {
       background-color: #ec5d8f;
       color: white;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      background-color: #fff0f5;
+      padding: 40px 20px;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+
+    .stats div {
       text-align: center;
-      padding: 20px;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
-  <div class="ribbon">
-    <div class="logo">
-      <img src="Chy Talks Tech_20250519_200023_0000.png" alt="Chy Talks Tech Logo">
-    </div>
-    <nav class="nav-links">
+  <!-- Header -->
+  <div class="header">
+    <h1>Portfolio</h1>
+    <div class="nav">
       <a href="#">Home</a>
       <a href="#">About</a>
       <a href="#">Skills</a>
       <a href="#">Services</a>
       <a href="#">Portfolio</a>
       <a href="#">Contact</a>
-    </nav>
+    </div>
+    <button class="cv-btn">Download CV</button>
   </div>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Hello, I'm Chy 👩‍💻</h1>
-    <p>Frontend Developer | Tech Enthusiast | Curious Creative</p>
-    <div class="buttons">
-      <button class="cta">Download CV</button>
-      <button class="cta">Hire Me</button>
-      <button class="cta">Contact Me</button>
+    <div class="profile">
+      <img src="Chandni_Chauhan_Profile.jpg" alt="Chandni Chauhan">
+    </div>
+    <div class="intro">
+      <h2>Hello, I'm</h2>
+      <h1>Chandni Chauhan</h1>
+      <p><strong>Frontend Developer</strong></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor augue at nisi bibendum, in rhoncus massa efficitur.</p>
+      <div class="buttons">
+        <button>Hire Me</button>
+        <button>Contact Me</button>
+      </div>
     </div>
   </section>
 
-  <div class="main-content">
-    <h1>💡 What I Do</h1>
-    <p>I build visually delightful and functional web experiences using modern technologies.</p>
-    <h2>Skills</h2>
-    <p>HTML · CSS · JavaScript · React · Git · Figma</p>
-    <h2>Services</h2>
-    <p>Responsive Web Design · UI/UX Consulting · Personal Branding Sites</p>
-  </div>
-
-  <div class="footer">
-    <p>© 2025 Chy Talks Tech. All rights reserved.</p>
+  <!-- Stats Section -->
+  <div class="stats">
+    <div>10+ Years of Experience</div>
+    <div>30+ Projects Completed</div>
+    <div>5+ Technologies Mastered</div>
+    <div>100+ Satisfied Clients</div>
   </div>
 </body>
 </html>
